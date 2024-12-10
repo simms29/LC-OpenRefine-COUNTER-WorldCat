@@ -20,5 +20,5 @@ Librarian
 
 ### Folks around the World:  
 - [Owen Stephens](https://github.com/ostephens), Owen Stephens Consulting
-- [Karen Coombs](https://blog.oclc.org/next/author/karen-coombs/), Senior Product Analyst - APIs at OCLC
+- [Karen Coombs](https://blog.oclc.org/next/author/karen-coombs/), Senior Product Analyst, OCLC Developer Network
 - [The LD4 Community](https://sites.google.com/stanford.edu/ld4-community-site/home) | Library Linked Data
