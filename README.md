@@ -12,7 +12,16 @@ Gather a small set of your ebook Project COUNTER data to test in .csv file forma
 Notes:  If you have your COUNTER data and want to remove the ISBN dashes, first change the format of that column to Number with no decimals and then select said column and do a Replace All function for the dash with nothing.  
 
 ### Step 2
-In this step you will enage OpenRefine.  I learned about [OpenRefine](https://openrefine.org/) in a [Library Carpentry](https://librarycarpentry.org/) workshop and [their publically available documentation](https://librarycarpentry.github.io/lc-open-refine/) may be useful. Basically, you need to [download OpenRefine](https://openrefine.org/download).
+In this step you will enage OpenRefine.  I learned about [OpenRefine](https://openrefine.org/) in a [Library Carpentry](https://librarycarpentry.org/) workshop and [their publically available documentation](https://librarycarpentry.github.io/lc-open-refine/) may be useful. Basically, you need to [download OpenRefine](https://openrefine.org/download).  Once you have downloaded OpenRefine and created an account, upload your csv COUNTER data file by doing:  
+1. Create Project
+2. Get Data from (this computer) and Choose Files
+3. click Next
+4. in the Parse Data section at the bottom half of your screen, choose **COMMAS** (csv)
+5. at top, give your project a sensible name; include any tags you want for managing your OpenRefine files
+6. click Create Project in the upper right corner
+7. once Done, it should open in the main OpenRefine.  If it does not, reload your browser and choose Open Project and choose this project.
+8. at this point, your basic csv file should look familiar in OpenRefine.
+
 
 
 ### Step 3
