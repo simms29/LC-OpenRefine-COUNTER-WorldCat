@@ -84,7 +84,7 @@ forEach(value.parseXml().select("dc|subject[xsi:type=http://purl.org/dc/terms/LC
 
 
 ### Step 5
-At this point, you have choices as to how you want to work with your merged data.  I am still unable to separate the unique LCC and LCSH retrieved and extracted from the WorldCat XML.  A colleague in my library was able to achieve this with python which I am not going to share because it is not my work and evidently not easy when I wanted to share something an average subject librarian could do themselves.
+At this point, you have choices as to how you want to work with your merged data.  I am still unable to separate the unique LCC and LCSH retrieved and extracted from the WorldCat XML.  A colleague in my library was able to achieve this with python which I am not going to share because it is not my work and evidently not easy to achieve by the average non-coding library worker.
 
 I did want to separate each LCC and LCSH from the cell in which they are combined.  This is what I did:
 1. In the dropdown arrow for the LCCall column, choose Edit Column --> Split into Several Columns
@@ -100,3 +100,7 @@ I did want to separate each LCC and LCSH from the cell in which they are combine
 11. UNCHECK the box Remove this Column
 12. Change the comma seperator/delimitter to the Pipe |
 13. Click OK.
+
+Note: You can clean more of your data in OpenRefine as well as export it and work with it in other programs.  You can also give others an opportunity to look at your OpenRefine Project with a permalink.  [Here is my test data with 2150 Wiley titles](http://127.0.0.1:3333/project?project=2488621316525&ui=%7B%22facets%22%3A%5B%5D%7D).
+
+How you use the subject data merged with your use data is of interest to me.  Please contact [me](https://libraries.indiana.edu/jennifer-simms) to discuss.
