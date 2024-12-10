@@ -48,7 +48,7 @@ In this step you will be writing **GREL expressions** [(General Refine Expressio
 2. Click on Edit column;
 3. Click on Add column by fetching URLs;
 4. Give the new column a Name; OCLC XML;
-5. In the GREL express box, replace Value with (Making sure to substitue your WSKey where I have _REPLACE WITH YOUR WSKEY_ in the above code.):
+5. In the GREL express box, replace Value with the following *Making sure to substitue your WSKey where I have _**REPLACE WITH YOUR WSKEY**_*:
 
 ````
 "http://www.worldcat.org/webservices/catalog/search/sru?servicelevel=full&wskey=REPLACE WITH YOUR WSKEY&query=srw.bn=" + value + "&recordSchema=info%3Asrw%2Fschema%2F1%2Fdc&frbrGrouping=off"
@@ -56,7 +56,7 @@ In this step you will be writing **GREL expressions** [(General Refine Expressio
   
 6. Click OK.
 
-Now notice that you have a LOT of XML data in your new OCLC XML column.  Each individual XML record is divided by the tags <record> and <\record>.  Each ISBN may have n number associated XML records.  
+Now notice that you have a LOT of XML data in your new OCLC XML column.  Each individual XML record is divided by the tags \<record> and \<\record>.  Each ISBN may have n number associated XML records.  
 
 ### Step 4
 It is now time to extract the LCC and LCSH from each XML record for each ISBN
