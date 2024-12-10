@@ -3,18 +3,14 @@
 ### [IU Libraries' Colleagues](https://libraries.indiana.edu/team):  
 - Spencer Anspach, Library Systems Analyst/Programmer & Head, Database Management  
 - Adam Crandell, Director, Library Applications and User Experience
-- Andrew Asher, Director of Organizational Research, Analytics, and Strategy & Assessment Librarian
-Associate Librarian
-- Julie Hardesty, Metadata Analyst, Associate Librarian
+- Andrew Asher, Director of Organizational Research, Analytics, and Strategy, & Assessment Librarian
+- Julie Hardesty, Metadata Analyst Librarian
 - Richard Higgins, Software Engineer
-- Sherri Michaels, Director, Collection Strategies and Management and Head, Collection Management
-Librarian  
+- Sherri Michaels, Director, Collection Strategies and Management, & Head, Collection Management
 - Misty Walter, Program Management Specialist  
 - Jon Dunn, Assistant Dean for Library Technologies  
 - Anna Marie Johnson, Associate Dean for Research and Learning Services
-Librarian  
 - Marion Frank-Wilson, Associate Dean for Collection Development, Archival Collections, and Technical Services
-Librarian  
 - Ilana Stonebraker, Head, Sciences and Social Sciences
 - Diane Dallis-Comentale, Ruth Lilly Dean of University Libraries 
 
