@@ -30,19 +30,20 @@ This step involves having a [WorldCat Search API 2.0 WSKey](https://www.oclc.org
 In this step, you will retrieve the xml records from WorldCat, matching on the ISBN in your Project COUNTER data.  We will be asking WorldCat to bring back ALL the records for each ISBN.  In many cases, there are several records per book in WorldCat, based on various formats and other cataloging considerations I do not fully understand (!). However, in doing this, I learned that some XML records for a book do not include much in the way of useful metadata, including something not having Library of Congress Classification or Library of Congress Subject Headings.  Hence, by bringing in ALL the xml records you have a much better chance of extracing LCC and LCSH per book.  
 In this step you will be writing GREL expressions [(General Refine Expression Language)](https://openrefine.org/docs/manual/grel) in OpenRefine to query the WorldCat API.  A bit of writing code, if you will.  
 - While in your OpenRefine Project:
-  1. Click on the arrow in the ISBN column
-  2. --> Click on Edit column
-  3. --> Click on Add column by fetching URLs
-  4. --> Give the new column a Name; OCLC XML
-  5. In the GREL express box, replace Value with:
-  ```
-  "http://www.worldcat.org/webservices/catalog/search/sru?servicelevel=full&wskey=REPLACE WITH YOUR WSKey&query=srw.bn=" 
-+ value + "&recordSchema=info%3Asrw%2Fschema%2F1%2Fdc&frbrGrouping=off"
-```
+- Click on the arrow in the ISBN column
+- Click on Edit column
+- Click on Add column by fetching URLs
+- Give the new column a Name; OCLC XML
+- In the GREL express box, replace Value with (Making sure to substitue your WSKey where I have _REPLACE WITH YOUR WSKEY_ in the above code.):
 
-6. click ok
-  copy this code
-```
-http://www.worldcat.org/webservices/catalog/search/sru?servicelevel=full&wskey
-```
+````
+"http://www.worldcat.org/webservices/catalog/search/sru?servicelevel=full&wskey=REPLACE WITH YOUR WSKEY&query=srw.bn=" + value + "&recordSchema=info%3Asrw%2Fschema%2F1%2Fdc&frbrGrouping=off"
+````
+  
+- click OK.
+
+Now notice that you have a LOT of XML data in your new OCLC XML column.  Each XML record is divided by the tags <record> and <\record>.  Each ISBN may have any number of associated XML records.  
+
+### Step 4
+It is now the time to extract the LCC and LCSH from each XML record for each ISBN.
 
