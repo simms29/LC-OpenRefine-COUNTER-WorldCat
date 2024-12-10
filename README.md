@@ -7,8 +7,14 @@ The following is a set of instructions (hopefully easy enough to follow) for col
 
 This DIY (do it yourself) stey-by-step guide incorporates [OpenRefine](https://openrefine.org/), [WorldCat API](https://www.oclc.org/developer/api/oclc-apis/worldcat-search-api.en.html), and [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel).
 
-Step 1
-Gather a small set of your ebook Project COUNTER data to test in .csv file format.  If you want a practice set, I have included a 10-line csv file here:  
-Notes:  If you have your COUNTER data and want to remove the ISBN dashes, first change the format of that column to Number with no decimals and then select said column and do a Replace All function for the dash with nothing.
+### Step 1
+Gather a small set of your ebook Project COUNTER data to test in .csv file format.  If you want a practice set, I have included a [10-line csv file](github_play_data_set_COUNTER.csv)  
+Notes:  If you have your COUNTER data and want to remove the ISBN dashes, first change the format of that column to Number with no decimals and then select said column and do a Replace All function for the dash with nothing.  
 
-Step 2
+### Step 2
+
+
+### Step 3
+This step involves having a [WorldCat Search API 2.0 WSKey](https://www.oclc.org/developer/api/oclc-apis/worldcat-search-api.en.html). I was able to obtain my Libraries' WSKey from my technical services/ information technology department colleagues.  If you are unable to obtain this, you may request a temporary one from the aforementioned OCLC website.
+
+
