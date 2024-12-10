@@ -12,6 +12,7 @@ Gather a small set of your ebook Project COUNTER data to test in .csv file forma
 Notes:  If you have your COUNTER data and want to remove the ISBN dashes, first change the format of that column to Number with no decimals and then select said column and do a Replace All function for the dash with nothing.  
 
 ### Step 2
+In this step you will enage OpenRefine.  I learned about [OpenRefine](https://openrefine.org/) in a [Library Carpentry](https://librarycarpentry.org/) workshop and [their publically available documentation](https://librarycarpentry.github.io/lc-open-refine/) may be useful. Basically, you need to [download OpenRefine](https://openrefine.org/download).
 
 
 ### Step 3
