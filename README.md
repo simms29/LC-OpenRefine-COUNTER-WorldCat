@@ -25,6 +25,15 @@ In this step you will enage OpenRefine.  I learned about [OpenRefine](https://op
 
 
 ### Step 3
-This step involves having a [WorldCat Search API 2.0 WSKey](https://www.oclc.org/developer/api/oclc-apis/worldcat-search-api.en.html). I was able to obtain my Libraries' WSKey from my technical services/ information technology department colleagues.  If you are unable to obtain this, you may request a temporary one from the aforementioned OCLC website.
-
+This step involves having a [WorldCat Search API 2.0 WSKey](https://www.oclc.org/developer/api/oclc-apis/worldcat-search-api.en.html). I was able to obtain my Libraries' WSKey from my technical services/ information technology department colleagues.  If you are unable to obtain this, you may request a temporary one from the aforementioned OCLC website. Here is an excellent [blog post from OCLC by Karen Combs on how to obtain a WSKey](https://www.oclc.org/developer/news/2018/using-open-refine-and-metadata-to-get-current-oclc-numbers.en.html).  
+In this step, you will retrieve the xml records from WorldCat, matching on the ISBN in your Project COUNTER data.  We will be asking WorldCat to bring back ALL the records for each ISBN.  In many cases, there are several records per book in WorldCat, based on various formats and other cataloging considerations I do not fully understand (!). However, in doing this, I learned that some XML records for a book do not include much in the way of useful metadata, including something not having Library of Congress Classification or Library of Congress Subject Headings.  Hence, by bringing in ALL the xml records you have a much better chance of extracing LCC and LCSH per book.  
+In this step you will be writing GREL expressions [(General Refine Expression Language)](https://openrefine.org/docs/manual/grel) in OpenRefine to query the WorldCat API.  A bit of writing code, if you will.  
+- While in your OpenRefine Project:
+  1. Click on the arrow in the ISBN column
+  2. --> Click on Edit column
+  3. --> Click on Add column by fetching URLs
+  4. --> Give the new column a Name; OCLC XML
+  5. In the GREL express box, replace Value with: "http://www.worldcat.org/webservices/catalog/search/sru?servicelevel=full&wskey=REPLACE WITH YOUR WSKey&query=srw.bn=" 
++ value + "&recordSchema=info%3Asrw%2Fschema%2F1%2Fdc&frbrGrouping=off"
+6. click ok
 
