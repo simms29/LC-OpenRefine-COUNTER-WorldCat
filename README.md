@@ -1,4 +1,3 @@
-# THIS PAGE IS BEING CREATED
 Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
 
 This work is licensed under a
@@ -11,9 +10,9 @@ This work is licensed under a
 [cc-by-nc-shield]: https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg
 
 # LC-OpenRefine-COUNTER-WorldCat
-Connecting Project COUNTER ebook usage data to Library of Congress Classification and Library of Congress Subject Headings from the WorldCat API using OpenRefine
+Connecting Project COUNTER ebook usage data to Library of Congress Classification and Library of Congress Subject Headings from the WorldCat API using OpenRefine.
 
-### Connecting Project COUNTER ebook usage data with Library of Congress Classification Numbers 
+### Connecting Project COUNTER ebook usage data with Library of Congress metadata
 
 The following is a set of instructions (hopefully easy enough to follow) for collection development librarians to create a data set that merges their Project COUNTER ebook useage with [Library of Congress (LoC) Classification](https://www.loc.gov/catdir/cpso/lcc.html) and [Loc Subject Headings](https://www.loc.gov/aba/publications/FreeLCSH/freelcsh.html) as a way to see their ebook subject collections.  The Project COUNTER data only gives us ISBN, Title, and Publisher to work with and I construe that this is not enough data to look meaningfully at how much ebook content my collection is receiving from what I acquire.  I have wanted to tackle this issue for years, so that I may have data to use to assess my collection useage akin to how I assess ejournal use.
 
@@ -56,7 +55,7 @@ In this step you will be writing GREL expressions [(General Refine Expression La
 Now notice that you have a LOT of XML data in your new OCLC XML column.  Each XML record is divided by the tags <record> and <\record>.  Each ISBN may have any number of associated XML records.  
 
 ### Step 4
-It is now the time to extract the LCC and LCSH from each XML record for each ISBN.
+It is now the time to extract the LCC and LCSH from each XML record for each ISBN. This portion of the work was heavily influenced by the excellent support received from the [OpenRefine Forum](https://forum.openrefine.org/t/parsing-xml-from-worldcat-records/1689) [by Owen Stephens](https://forum.openrefine.org/u/ostephens/summary).
 1. In the down arrow in the OCLC XML column header, select Edit and Add Column based on this Column
 2. Add a New Column, call it LCCall
 3. In the Expression Box, replace Value with 
@@ -74,6 +73,25 @@ forEach(value.parseXml().select("dc|subject[xsi:type=http://purl.org/dc/terms/LC
 ````
 10. Again, notice in the preview window that you are extracting LCSH with the | divider!
 11. click OK.
-14. 
+
+
+### Step 5
+At this point, you have choices as to how you want to work with your merged data.  I am still unable to separate the unique LCC and LCSH retrieved and extracted from the WorldCat XML.  A colleague in my library was able to achieve this with python which I am not going to share because it is not my work and evidently not easy when I wanted to share something an average subject librarian could do themselves.
+
+I did want to separate each LCC and LCSH from the cell in which they are combined.  This is what I did:
+1. In the dropdown arrow for the LCCall column, choose Edit Column --> Split into Several Columns
+2. UNCHECK the box Remove this Column
+3. Change the comma seperator/delimitter to the Pipe |
+4. Click OK.
+5. Do almost the same for the LCSHall column, but first remove the periods from the delimitted data.
+6. In the dropdown arrow for the LCSHall column, choose Edit Cells --> Replace
+7. In the Find field, type a period (.).
+8. In the Replace field, add nothing.
+9. Click OK.
+10. Proceed as above: In the dropdown arrow for the LCSHall column, choose Edit Column --> Split into Several Columns
+11. UNCHECK the box Remove this Column
+12. Change the comma seperator/delimitter to the Pipe |
+13. Click OK.
+
 
 
