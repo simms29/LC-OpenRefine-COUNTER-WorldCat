@@ -46,4 +46,17 @@ Now notice that you have a LOT of XML data in your new OCLC XML column.  Each XM
 
 ### Step 4
 It is now the time to extract the LCC and LCSH from each XML record for each ISBN.
+1. In the down arrow in the OCLC XML column header, select Edit and Add Column based on this Column
+2. Add a New Column, call it LCCall
+3. In the Expression Box, replace Value with forEach(value.parseXml().select("dc|subject[xsi:type=http://purl.org/dc/terms/LCC]"),x,x.ownText()).join("|")
+4. notice in the preview window you are extracting LCC with the | divider!
+5. click OK.
+6. Let's do the same for adding an LCSH column
+7. In the down arrow in the OCLC XML column header, select Edit and Add Column based on this Column
+8. Add a New Column, call it LCSHall
+9. In the Expression Box, replace Value with forEach(value.parseXml().select("dc|subject[xsi:type=http://purl.org/dc/terms/LCSH]"),x,x.ownText()).join("|")
+10. Again, notice in the preview window that you are extracting LCSH with the | divider!
+11. click OK.
+12. 
+
 
