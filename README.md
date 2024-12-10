@@ -1,3 +1,4 @@
+# THIS PAGE IS BEING CREATED
 # LC-OpenRefine-COUNTER-WorldCat
 Connecting Project COUNTER ebook usage data to Library of Congress Classification and Library of Congress Subject Headings from the WorldCat API using OpenRefine
 
@@ -33,7 +34,15 @@ In this step you will be writing GREL expressions [(General Refine Expression La
   2. --> Click on Edit column
   3. --> Click on Add column by fetching URLs
   4. --> Give the new column a Name; OCLC XML
-  5. In the GREL express box, replace Value with: "http://www.worldcat.org/webservices/catalog/search/sru?servicelevel=full&wskey=REPLACE WITH YOUR WSKey&query=srw.bn=" 
+  5. In the GREL express box, replace Value with:
+  ```
+  "http://www.worldcat.org/webservices/catalog/search/sru?servicelevel=full&wskey=REPLACE WITH YOUR WSKey&query=srw.bn=" 
 + value + "&recordSchema=info%3Asrw%2Fschema%2F1%2Fdc&frbrGrouping=off"
+```
+
 6. click ok
+  copy this code
+```
+http://www.worldcat.org/webservices/catalog/search/sru?servicelevel=full&wskey
+```
 
