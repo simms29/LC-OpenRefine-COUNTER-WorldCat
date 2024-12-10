@@ -8,7 +8,7 @@ The following is a set of instructions (hopefully easy enough to follow) for col
 This DIY (do it yourself) stey-by-step guide incorporates [OpenRefine](https://openrefine.org/), [WorldCat API](https://www.oclc.org/developer/api/oclc-apis/worldcat-search-api.en.html), and [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel).
 
 Step 1
-Gather a small set of your ebook Project COUNTER data to test in .csv file format.  If you want a practice set, I have included a 10-line csv file here: 
+Gather a small set of your ebook Project COUNTER data to test in .csv file format.  If you want a practice set, I have included a 10-line csv file here:  
 Notes:  If you have your COUNTER data and want to remove the ISBN dashes, first change the format of that column to Number with no decimals and then select said column and do a Replace All function for the dash with nothing.
 
 Step 2
