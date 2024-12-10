@@ -44,7 +44,7 @@ In this step, you will retrieve the xml records from WorldCat, matching on the I
 In fussing over this project, I learned that some XML records for a book do not include much in the way of useful metadata, including some records not having any Library of Congress Classification or Library of Congress Subject Headings.  Hence, by bringing in ALL the xml records you have a much better chance of extracing LCC and LCSH per book. 
 
 In this step you will be writing **GREL expressions** [(General Refine Expression Language)](https://openrefine.org/docs/manual/grel) in OpenRefine to query the WorldCat API.  A bit of writing code, if you will.  
-1. While in your OpenRefine Project: Click on the arrow in the ISBN column;
+1. While in your OpenRefine Project: Click on the down arrow in the ISBN column;
 2. Click on Edit column;
 3. Click on Add column by fetching URLs;
 4. Give the new column a Name; OCLC XML;
@@ -87,16 +87,16 @@ forEach(value.parseXml().select("dc|subject[xsi:type=http://purl.org/dc/terms/LC
 At this point, you have choices as to how you want to work with your merged data.  I am still unable to separate the unique LCC and LCSH retrieved and extracted from the WorldCat XML.  A colleague in my library was able to achieve this with python which I am not going to share because it is not my work and evidently not easy when I wanted to share something an average subject librarian could do themselves.
 
 I did want to separate each LCC and LCSH from the cell in which they are combined.  This is what I did:
-1. In the dropdown arrow for the LCCall column, choose Edit Column --> Split into Several Columns
+1. In the down arrow for the LCCall column, choose Edit Column --> Split into Several Columns
 2. UNCHECK the box Remove this Column
 3. Change the comma seperator/delimitter to the Pipe |
 4. Click OK.
 5. Do almost the same for the LCSHall column, but first remove the periods from the delimitted data.
-6. In the dropdown arrow for the LCSHall column, choose Edit Cells --> Replace
+6. In the down arrow for the LCSHall column, choose Edit Cells --> Replace
 7. In the Find field, type a period (.).
 8. In the Replace field, add nothing.
 9. Click OK.
-10. Proceed as above: In the dropdown arrow for the LCSHall column, choose Edit Column --> Split into Several Columns
+10. Proceed as above: In the down arrow for the LCSHall column, choose Edit Column --> Split into Several Columns
 11. UNCHECK the box Remove this Column
 12. Change the comma seperator/delimitter to the Pipe |
 13. Click OK.
