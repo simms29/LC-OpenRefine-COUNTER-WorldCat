@@ -104,3 +104,5 @@ I did want to separate each LCC and LCSH from the cell in which they are combine
 Note: You can clean more of your data in OpenRefine as well as export it and work with it in other programs.  You can also give others an opportunity to look at your OpenRefine Project with a permalink.  [Here is my test data with 2150 Wiley titles](http://127.0.0.1:3333/project?project=2488621316525&ui=%7B%22facets%22%3A%5B%5D%7D).
 
 How you use the subject data merged with your use data is of interest to me.  Please contact [me](https://libraries.indiana.edu/jennifer-simms) to discuss.
+
+I want to [acknowledge many colleagues](https://github.com/simms29/LC-OpenRefine-COUNTER-WorldCat/blob/main/ACKNOWLEDGMENTS.md) who have supported my inquiry into this wondering over the years.
