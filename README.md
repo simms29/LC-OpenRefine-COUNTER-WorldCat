@@ -101,7 +101,7 @@ I did want to separate each LCC and LCSH from the cell in which they are combine
 12. Change the comma seperator/delimitter to the Pipe |
 13. Click OK.
 
-Note: You can clean more of your data in OpenRefine as well as export it and work with it in other programs.  You can also give others an opportunity to look at your OpenRefine Project with a permalink.  [Here is my test data with 2150 Wiley titles](http://127.0.0.1:3333/project?project=2488621316525&ui=%7B%22facets%22%3A%5B%5D%7D).
+Note: You can clean more of your data in OpenRefine as well as export it and work with it in other programs.  You can also give others an opportunity to look at your OpenRefine Project with a permalink.  [Here is my test data with 2150 Wiley titles](http://127.0.0.1:3333/project?project=2488621316525&ui=%7B%22facets%22%3A%5B%5D%7D).  And, [here is the same Wiley test data in xls](https://github.com/simms29/LC-OpenRefine-COUNTER-WorldCat/blob/main/2024_STELLA_example_final.xlsx) on this github site.
 
 How you use the subject data merged with your use data is of interest to me.  Please contact [me](https://libraries.indiana.edu/jennifer-simms) to discuss.
 
