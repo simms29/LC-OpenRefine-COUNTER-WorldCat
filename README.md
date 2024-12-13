@@ -105,4 +105,4 @@ Note: You can clean more of your data in OpenRefine as well as export it and wor
 
 How you use the subject data merged with your use data is of interest to me.  Please contact [me](https://libraries.indiana.edu/jennifer-simms) to discuss.
 
-I want to [acknowledge many colleagues](https://github.com/simms29/LC-OpenRefine-COUNTER-WorldCat/blob/main/ACKNOWLEDGMENTS.md) who have supported my inquiry into this wondering over the years.
+I want to [acknowledge many colleagues](https://github.com/simms29/LC-OpenRefine-COUNTER-WorldCat/blob/main/ACKNOLWEDGEMENTS.md) who have supported my inquiry into this wondering over the years.
