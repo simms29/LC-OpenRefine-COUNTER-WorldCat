@@ -4,6 +4,7 @@
 - Spencer Anspach, Library Systems Analyst/Programmer & Head, Database Management  
 - Adam Crandell, Director, Library Applications and User Experience
 - Andrew Asher, Director of Organizational Research, Analytics, and Strategy, & Assessment Librarian
+- Amy Minix, Neuro- and Health Sciences Librarian
 - Julie Hardesty, Metadata Analyst Librarian
 - Richard Higgins, Software Engineer
 - Sherri Michaels, Director, Collection Strategies and Management, & Head, Collection Management
